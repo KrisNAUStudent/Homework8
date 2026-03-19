@@ -18,24 +18,6 @@ function showGreeting() {
 }
 showGreeting();
 
-const today = new Date();
-
-const futureDate = new Date();
-futureDate.setDate(today.getDate() + 3);
-
-const utc1 = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
-const utc2 = Date.UTC(
-  futureDate.getFullYear(),
-  futureDate.getMonth(),
-  futureDate.getDate(),
-);
-
-const timeDiff = Math.abs(utc2 - utc1);
-
-const daysDiff = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
-
-document.getElementById("deadline").textContent =
-  `Days until deadline is ${today.toDateString()} and ${futureDate.toDateString()}: ${daysDiff} days`;
 
 
 function skill() {
