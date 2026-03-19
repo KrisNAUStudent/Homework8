@@ -1,0 +1,31 @@
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navigation{
+    position: sticky;
+    top: 40px;
+    z-index: 1500;
+}
+
+#navigation a{
+    text-decoration: none;
+}
+
+#navigation a:hover {
+    color: #130d0d75;   
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
